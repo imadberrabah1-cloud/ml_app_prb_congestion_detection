@@ -12,7 +12,7 @@ if st.button("Predict"):
   try:
       data = [[charge_CCE,Trafic,NBR_UE]]
       prediction = model.predict(data)
-      st.write(f"predicted cell state :{prediction[0]:.2f)"} 
+      st.write(f"predicted cell state :{prediction[0]:.2f}")
   except Exception as e:
        st.error(f"Error:{e}")
 
